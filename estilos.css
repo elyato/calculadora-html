@@ -1,0 +1,15 @@
+*{
+    
+    background-image: linear-gradient(to right, #97BFEB , #4CEB3A);
+}
+body{
+font-family: sans-serif;
+text-align: center;
+}
+
+input{
+display: block;
+margin: auto;
+margin-bottom: 15px;
+}
+
