@@ -1,15 +1,15 @@
-*{
-    
-    background-image: linear-gradient(to right, #97BFEB , #4CEB3A);
+* {
+  background-image: linear-gradient(to right, #a6ddd8, #d9b0e1);
 }
-body{
-font-family: sans-serif;
-text-align: center;
-}
-
-input{
-display: block;
-margin: auto;
-margin-bottom: 15px;
+body {
+  font-family: sans-serif;
+  text-align: center;
 }
 
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  color: black;
+  background-color: white;
+}
