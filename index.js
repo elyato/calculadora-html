@@ -4,19 +4,16 @@ const txtOp2 = document.getElementById("op2");
 const btnCalcular = document.getElementById("calcular");
 const pResultado = document.getElementById("resultado");
 
-btnCalcular.addEventListener("click", calcular);
 function calcular() {
-  const operador = txtOperador.value;
+  const operador = txtOperador;
   const op1 = parseFloat(txtOp1.value);
   const op2 = parseFloat(txtOp2.value);
-
+  
   if (
-    (operador == "+" ||
-      operador == "-" ||
-      operador == "*" ||
-      operador == "/") &&
-    !isNaN(op1) &&
-    !isNaN(op2)
+    operador === "+" ||
+    operador === "-" ||
+    operador === "*" ||
+    (operador === "/" && !isNaN(op1) && !isNaN(op2))
   ) {
     let resultado;
     switch (operador) {
@@ -40,3 +37,8 @@ function calcular() {
   }
 }
 //console.log("presionaste el boton de calcular ")
+let suma = 2
+if (operador == suma) {
+  console.log("ingreso bien el operador");
+} 
+btnCalcular.addEventListener("click", calcular);
